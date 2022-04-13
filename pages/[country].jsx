@@ -68,7 +68,11 @@ const Country = ({ country, borders }) => {
       </Head>
       <div className={`${styles.Country} ${theme}`}>
         <button className={`${styles.backButton} ${theme}`} onClick={goBack}>
-          <FontAwesomeIcon icon={faLongArrowLeft} className={styles['backButton__icon']} />
+          <FontAwesomeIcon
+            icon={faLongArrowLeft}
+            className={styles['backButton__icon']}
+            width="16"
+          />
           Back
         </button>
         <div className={styles.countryDetail}>

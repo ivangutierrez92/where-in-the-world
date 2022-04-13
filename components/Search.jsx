@@ -10,7 +10,7 @@ const Search = ({ value, setValue, placeholder, theme }) => {
   return (
     <div className={`${styles.Search} ${theme}`}>
       <div className={styles['Search__icon']}>
-        <FontAwesomeIcon icon={faSearch} />
+        <FontAwesomeIcon icon={faSearch} width="13" />
       </div>
       <input
         type="text"

@@ -17,8 +17,12 @@ const Header = () => {
       </nav>
       <div>
         <button className={`${styles.darkModeButton}`} onClick={onChangeTheme}>
-          <FontAwesomeIcon icon={faMoon} className={`${styles['darkModeButton__icon']}`} /> Dark
-          Mode
+          <FontAwesomeIcon
+            icon={faMoon}
+            className={`${styles['darkModeButton__icon']}`}
+            width="17"
+          />{' '}
+          Dark Mode
         </button>
       </div>
     </header>
