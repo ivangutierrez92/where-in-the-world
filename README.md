@@ -125,6 +125,6 @@ Aprendí también cómo hacer un mejor extracción de la información en página
 
 Hay un problema con el redimiento de la función de búsqueda, en donde se congela al borrar muchas letras al mismo tiempo. Quiero mejorar aquello.
 
-## Author
+## Autor
 
 - Frontend Mentor - [@llamafluida](https://www.frontendmentor.io/profile/llamafluida)
