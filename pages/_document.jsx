@@ -10,6 +10,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
       <body>
         <Main />

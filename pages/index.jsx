@@ -48,10 +48,10 @@ export default function Home({ countries }) {
         <meta name="description" content="App to see the countries of the world!" />
         <meta property="og:title" content="Where in the World" />
         <meta property="og:description" content="App to see the countries of the world!" />
-        <meta property="og:image" content="/social-icon.png" />
+        <meta property="og:image" content="social-icon.png" />
         <meta property="twitter:title" content="Where in the World" />
         <meta property="twitter:description" content="App to see the countries of the world!" />
-        <meta property="twitter:image" content="/social-icon.png" />
+        <meta property="twitter:image" content="social-icon.png" />
         <meta property="twitter:image:alt" content="Icon of the World" />
       </Head>
       <main className={`${styles.main} ${theme}`}>
