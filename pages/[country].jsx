@@ -116,7 +116,7 @@ const Country = ({ country, borders }) => {
             </div>
             <div className={styles.borderCountries}>
               <h3 className={styles['borderCountries__title']}>Border Countries:</h3>
-              {borders.map((border, key) => (
+              {borders?.map((border, key) => (
                 <Link href={`/${border.name}`} key={`borderCountry-link-${key}`}>
                   <a className={`${styles['borderCountries__link']} ${theme}`}>{border.name}</a>
                 </Link>
