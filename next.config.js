@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: 'akamai',
-    path: '/where-in-the-world',
+    path: '',
     domains: ['upload.wikimedia.org', 'flagcdn.com'],
   },
   productionBrowserSourceMaps: true,
