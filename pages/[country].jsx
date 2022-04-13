@@ -24,11 +24,18 @@ export async function getStaticProps({ params }) {
   const country = await res.json();
   let borders = [];
   if (country[0].borders) {
-    const countryBorders = country[0].borders.join(',');
-    const resBorders = await fetch(
-      `https://restcountries.com/v2/alpha?codes=${countryBorders}?fields=name`
-    );
-    borders = await resBorders.json();
+    if (country[0].length > 1) {
+      const countryBorders = country[0].borders.join(',');
+      const resBorders = await fetch(
+        `https://restcountries.com/v2/alpha?codes=${countryBorders}?fields=name`
+      );
+      borders = await resBorders.json();
+    } else {
+      const resBorders = await fetch(
+        `https://restcountries.com/v2/alpha/${country[0].borders[0]}?fields=name`
+      );
+      borders.push(await resBorders.json());
+    }
   }
 
   return {
@@ -116,7 +123,7 @@ const Country = ({ country, borders }) => {
             </div>
             <div className={styles.borderCountries}>
               <h3 className={styles['borderCountries__title']}>Border Countries:</h3>
-              {borders?.map((border, key) => (
+              {borders.map((border, key) => (
                 <Link href={`/${border.name}`} key={`borderCountry-link-${key}`}>
                   <a className={`${styles['borderCountries__link']} ${theme}`}>{border.name}</a>
                 </Link>
