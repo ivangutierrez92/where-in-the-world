@@ -1,0 +1,44 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8px 30px 15px;
+  box-shadow: 0px 0px 6px 0px var(--theme-shadow);
+  position: relative;
+  z-index: 1;
+  background-color: var(--theme-background);
+}
+
+.homeLink {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--theme-text);
+}
+
+.darkModeButton {
+  font-size: 13px;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.darkModeButton__icon {
+  transform: rotate(-30deg);
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+@media (min-width: 775px) {
+  .Header {
+    padding: 30px 70px 30px 79px;
+  }
+
+  .homeLink {
+    font-size: 24px;
+  }
+
+  .darkModeButton {
+    font-size: 17px;
+  }
+}

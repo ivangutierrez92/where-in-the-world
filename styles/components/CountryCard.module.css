@@ -1,0 +1,29 @@
+.Card {
+    background-color: var(--theme-elements);
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px var(--theme-shadow);
+}
+
+.Card__image {
+    border-radius: 5px 5px 0 0;
+}
+.cardContent {
+    padding: 25px 20px 30px 20px;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+@media (min-width: 775px) {
+    .Card {
+        width: 260px;
+        margin-bottom: 80px;
+    }
+  }

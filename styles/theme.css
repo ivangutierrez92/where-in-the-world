@@ -1,0 +1,17 @@
+.light {
+  --theme-elements: hsl(0, 0%, 100%);
+  --theme-text: hsl(200, 15%, 8%);
+  --theme-background: hsl(0, 0%, 98%);
+  --theme-input: hsl(0, 0%, 52%);
+  --theme-shadow: hsl(0, 0%, 85%);
+  transition: all 200ms ease;
+}
+
+.dark {
+  --theme-elements: hsl(209, 23%, 22%);
+  --theme-text: hsl(0, 0%, 100%);
+  --theme-background: hsl(207, 26%, 17%);
+  --theme-input: hsl(0, 0%, 100%);
+  --theme-shadow: hsl(207, 23%, 8%);
+  transition: all 100ms ease;
+}

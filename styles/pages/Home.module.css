@@ -1,0 +1,34 @@
+.main {
+  padding: 25px 15px;
+  flex: 1;
+  background-color: var(--theme-background);
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.cardsContainer {
+  display: grid;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+@media (min-width: 775px) {
+  .main {
+    padding: 50px 79px;
+  }
+  .cardsContainer {
+    max-width: 1440px;
+    grid-template-columns: repeat(auto-fill, 260px);
+    column-gap: 75px;
+    justify-content: center;
+  }
+  .filters {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
