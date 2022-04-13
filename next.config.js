@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    loader: 'akamai',
     domains: ['upload.wikimedia.org', 'flagcdn.com'],
   },
   productionBrowserSourceMaps: true,
