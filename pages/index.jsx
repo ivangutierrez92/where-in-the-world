@@ -65,9 +65,13 @@ export default function Home({ countries }) {
           <Select theme={theme} setValue={setSelectedValue} />
         </div>
         <section className={styles.cardsContainer}>
-          {searchedCountries.map((country, key) => (
-            <CountryCard theme={theme} country={country} key={`country-card-${key}`} />
-          ))}
+          {searchedCountries.length ? (
+            searchedCountries.map((country, key) => (
+              <CountryCard theme={theme} country={country} key={`country-card-${key}`} />
+            ))
+          ) : (
+            <h2>No Results</h2>
+          )}
         </section>
       </main>
     </>
