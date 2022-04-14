@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Where in the world](https://llamafluida.github.io/where-in-the-world)
+- Solution URL: [Github](https://github.com/llamafluida/where-in-the-world)
 - Live Site URL: [Where in the world](https://llamafluida.github.io/where-in-the-world)
 
 ## My process
@@ -94,7 +94,7 @@ Los usuarios deberían de poder:
 
 ### Vínculos
 
-- URL de la solución: [Where in the world](https://llamafluida.github.io/where-in-the-world)
+- URL de la solución: [Github](https://github.com/llamafluida/where-in-the-world)
 - URL del sitio en vivo: [Where in the world](https://llamafluida.github.io/where-in-the-world)
 
 ## Mi Proceso
