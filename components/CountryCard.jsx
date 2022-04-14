@@ -6,7 +6,7 @@ import Link from 'next/link';
 const CountryCard = ({ theme, country }) => {
   return (
     <article className={`${styles.Card} ${theme}`}>
-      <Link href={`/${country.name}`}>
+      <Link href={`/${country.name.toLowerCase()}`}>
         <a>
           <div>
             <Image

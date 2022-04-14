@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   const countries = await res.json();
 
   const paths = countries.map(country => ({
-    params: { country: country.name },
+    params: { country: country.name.toLowerCase() },
   }));
 
   return { paths, fallback: false };
@@ -128,7 +128,7 @@ const Country = ({ country, borders }) => {
             <div className={styles.borderCountries}>
               <h3 className={styles['borderCountries__title']}>Border Countries:</h3>
               {borders.map((border, key) => (
-                <Link href={`/${border.name}`} key={`borderCountry-link-${key}`}>
+                <Link href={`/${border.name.toLowerCase()}`} key={`borderCountry-link-${key}`}>
                   <a className={`${styles['borderCountries__link']} ${theme}`}>{border.name}</a>
                 </Link>
               ))}
